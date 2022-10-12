@@ -8,29 +8,28 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyle"
+        android:id="@+id/profile"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:layout_marginBottom="15dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/view1" />
+        tools:listitem="@layout/rsc_ex" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="395dp"
-        android:layout_height="100dp"
-        android:layout_weight="30"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/button"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:text="Add"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyle"
-        app:layout_constraintVertical_bias="0.492" />
+        tools:layout_editor_absoluteY="622dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,8 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn1.setOnClickListener {
-            startActivity(Intent(this@MainActivity,second::class.java))
+        addbtn.setOnClickListener {
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.mainhome,addd())
+                .commit()
         }
     }
 }
